@@ -12,7 +12,7 @@ results = duckdb.sql("SELECT 42").df()
 print(results)
 
 # create connection to file database
-con = duckdb.connect('demo-duck.db')
+con = duckdb.connect('demo_duck_local.db')
 
 # recreate table
 con.sql('DROP TABLE IF EXISTS numbers')
